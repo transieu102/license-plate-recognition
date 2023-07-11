@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Processing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onwheel="return false;">
+    <div class="popUp" id="streamInput">
+        <div class="inputZone">
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            <p class="elementTitle">Input Stream URL</p>
+            <input type="text" id="urlInput" placeholder="Stream URL">
+            <button>OK</button>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="mainTitle">LICENSE PLATE RECOGNITION</div>
+        <div class="inputSrc">
+            <div class="inputElement" id="inputVideo">
+                <p class="elementTitle">Upload Video</p>
+                <i class="fa-solid fa-video bigIcon"></i>
+                <input type="file" id="videoInput" accept="video/*" />
+            </div>
+            <div class="inputElement" id="inputStreamLink">
+                <p class="elementTitle">Stream Link</p>
+                <i class="fa-solid fa-link bigIcon"></i>
+            </div>
+        </div>
+        <div class="frameContainer">
+            <i class="fa-solid fa-arrow-left backIcon"></i>
+            <canvas id="canvasElement" style="display: none;"></canvas>
+            <canvas id="canvasElement2"></canvas>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
